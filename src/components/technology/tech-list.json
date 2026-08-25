@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_technology_tech_lists",
+  "info": {
+    "displayName": "Tech List",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "Angular",
+        "BoldGrid",
+        "Bootstrap",
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "Material UI",
+        "Next.js",
+        "Python",
+        "React",
+        "WordPress"
+      ],
+      "required": true
+    }
+  }
+}
