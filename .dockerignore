@@ -1,0 +1,16 @@
+node_modules
+.git
+.env
+.env.local
+.env*.local
+.tmp
+.cache
+dist
+build
+.strapi
+npm-debug.log*
+Dockerfile
+.dockerignore
+docker-compose.yml
+README.md
+public/uploads

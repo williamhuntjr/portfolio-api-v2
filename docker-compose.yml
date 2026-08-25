@@ -1,0 +1,18 @@
+services:
+  portfolio-api-v2:
+    build: .
+    image: portfolio-api-v2:latest
+    container_name: portfolio-api-v2
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    ports:
+      # Bound to localhost only — Apache reverse-proxies to this from the
+      # public vhost. Do not expose this port publicly.
+      - "127.0.0.1:1337:1337"
+    volumes:
+      # Change the host-side path (left of the colon) to wherever uploaded
+      # media should live on this server. Strapi's local upload provider
+      # writes to public/uploads inside the app, so this makes those files
+      # persist on the host across container rebuilds/restarts.
+      - /srv/portfolio-api-v2/uploads:/opt/app/public/uploads
