@@ -627,8 +627,8 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.String & Schema.Attribute.Required;
     designed: Schema.Attribute.Boolean;
-    is_discontinued: Schema.Attribute.Boolean;
-    is_featured: Schema.Attribute.Boolean;
+    is_discontinued: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    is_featured: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

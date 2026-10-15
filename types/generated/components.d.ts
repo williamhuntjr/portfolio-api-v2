@@ -75,6 +75,7 @@ export interface TechnologyTechList extends Struct.ComponentSchema {
         'Angular',
         'BoldGrid',
         'Bootstrap',
+        'cPanel',
         'Docker',
         'Kubernetes',
         'Linux',

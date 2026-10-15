@@ -43,10 +43,12 @@
       "allowedTypes": ["images"]
     },
     "is_discontinued": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "is_featured": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "technology": {
       "type": "component",
