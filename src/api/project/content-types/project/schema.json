@@ -39,6 +39,14 @@
     "case_study_url": {
       "type": "string"
     },
+    "source_url": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "min": 1990,
+      "max": 2100
+    },
     "thumbnail": {
       "type": "media",
       "multiple": false,

@@ -638,6 +638,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    source_url: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     technology: Schema.Attribute.Component<'technology.tech-list', true>;
     thumbnail: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
@@ -645,6 +646,14 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     url: Schema.Attribute.String & Schema.Attribute.Required;
+    year: Schema.Attribute.Integer &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2100;
+          min: 1990;
+        },
+        number
+      >;
   };
 }
 
