@@ -36,6 +36,9 @@
       "type": "string",
       "required": true
     },
+    "case_study_url": {
+      "type": "string"
+    },
     "thumbnail": {
       "type": "media",
       "multiple": false,

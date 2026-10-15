@@ -620,6 +620,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    case_study_url: Schema.Attribute.String;
     coded: Schema.Attribute.Boolean;
     converted_wireframe: Schema.Attribute.Boolean;
     createdAt: Schema.Attribute.DateTime;
